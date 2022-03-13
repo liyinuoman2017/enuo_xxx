@@ -25,11 +25,13 @@
 
 虽然计算机的硬件实现各不相同，但是它们基本使用了同一套通用的硬件框架设计，计算机的经典硬件模型如下：
 
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/dddee675ccd245cebbe02649360ad6dd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGl5aW51bzIwMTc=,size_19,color_FFFFFF,t_70,g_se,x_16)
 
 组成计算机的5个经典部件是**控制器，数据通路，存储器，输入和输出**。控制器和数据通路这两个部件合称为处理器。控制器向数据通路，存储器，输入和输出发出控制信号。处理器从存储器中获取指令和数据。
 
 嵌入式操作系统通常情况下运行在嵌入式计算机上，为了方便学习我们将**嵌入式计算机**简化成如下硬件模型（**哈佛结构**）：
+
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/8a7d60a025ed4d0eb9228dec5f70b1b6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGl5aW51bzIwMTc=,size_19,color_FFFFFF,t_70,g_se,x_16)
 
@@ -40,9 +42,11 @@
 程序存储器通常可使用ROM,FLASH,RAM等存储介质，在嵌入式计算机通常使用可以**片内执行**（**XIP**）的程序存储器。支持片内执行的存储介质有ROM,NOR Flash，SRAM。在低端嵌入式计算机中（如单片机），程序存储器就通常使用NOR Flash。
 程序存储器中存储的程序是什么样的呢？下图分表是KEIL编译产生的bin文件和仿真读出的芯片程序存储器内的信息。
 
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/6bf20eb252d94a52bbb25749e798ec06.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGl5aW51bzIwMTc=,size_20,color_FFFFFF,t_70,g_se,x_16)
 
  程序就是以这种二进制的方式存在与程序存储器中，二进制这种形式肯定不适合人直接阅读。将以上二进制代码经过反汇编之后，得到的汇编程序如下：
+ 
  
  ![在这里插入图片描述](https://img-blog.csdnimg.cn/c9d9f041c5bd472daa04cf675da6d22b.png)
  
@@ -55,6 +59,7 @@
 ## 2.2处理器
 
 处理器是计算机的核心部件用于完成运算工作，其内部包括寄存器堆，运算单元，控制单元和总线。处理器的简化模型如下：
+
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/cf572467e2d94ce0b5cd6ef60cd385b8.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGl5aW51bzIwMTc=,size_19,color_FFFFFF,t_70,g_se,x_16)
 
@@ -380,12 +385,18 @@ __asm   void  PendSV_Handler(void)
 <font color=red>**希望获取源码的朋友们在评论区里留言。**
 
 **未完待续…**
-**实时操作系统系列将持续更新
-创作不易希望朋友们点赞，转发，评论，关注
-您的点赞，转发，评论，关注将是我持续更新的动力
-作者：李巍
-Github：liyinuoman2017
-CSDN：liyinuo2017
-今日头条：程序猿李巍**
+**实时操作系统系列将持续更新**
+	
+**创作不易希望朋友们点赞，转发，评论，关注**
+	
+**您的点赞，转发，评论，关注将是我持续更新的动力**
+	
+**作者：李巍**
+	
+**Github：liyinuoman2017**
+	
+**CSDN：liyinuo2017**
+	
+**今日头条：程序猿李巍**
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/7df2c5f7d3e04918b3361cb0147b8ab9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAbGl5aW51bzIwMTc=,size_20,color_FFFFFF,t_70,g_se,x_16)
